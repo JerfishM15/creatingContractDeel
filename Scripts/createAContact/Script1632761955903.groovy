@@ -20,6 +20,8 @@ import utileria.accion as accion
 //calling the login Test case
 WebUI.callTestCase(findTestCase("Test Cases/login"), [:], FailureHandling.STOP_ON_FAILURE);
 
+// exiting alternative windows
+accion.click("//*[@class='button button-close']");
 //Creating contact
 accion.click("//p[contains(text(),'Create A Contract')]");
 
